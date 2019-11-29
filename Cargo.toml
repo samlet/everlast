@@ -1,0 +1,40 @@
+[package]
+name = "everlast"
+version = "0.1.0"
+authors = ["Samlet Wu"]
+description = "Event history tracker"
+readme = "README.md"
+license = "MIT"
+keywords = ["dgraph", "grpc"]
+build = "build.rs"
+edition = "2018"
+
+[dependencies]
+grpcio = "0.4.3"
+futures = "0.1.25"
+protobuf = "2.3.0"
+failure = "0.1.5"
+rand = "0.6.5"
+rdkafka = "~0.21"
+rdkafka-sys = "1.0"
+libc = "0.2.0"
+log = "0.3.0"
+serde = "1.0.0"
+serde_derive = "1.0.0"
+serde_json = "1.0.0"
+
+[dev-dependencies]
+chrono = { version = "0.4.6", features = ["serde"] }
+serde = "1.0.87"
+serde_derive = "1.0.87"
+serde_json = "1.0.38"
+slog = "2.4.1"
+slog-term = "2.4.0"
+slog-scope = "4.1.1"
+clap = "2.18.0"
+env_logger = "0.3.0"
+rand = "0.3.15"
+tokio = "0.1.7"
+
+[build-dependencies]
+protoc-grpcio = "1.0.1"
